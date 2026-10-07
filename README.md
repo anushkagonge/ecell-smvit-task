@@ -14,8 +14,6 @@ Stack: HTML, CSS, JavaScript, GSAP (frontend). Node.js + Express, bcrypt, JWT (b
 
 3. Open http://localhost:3000
 
-Edit `.env` and set JWT_SECRET to any long random text before you submit.
-
 ## Folder map
 
 server.js            backend: API + serves the website
@@ -29,5 +27,3 @@ public/js/main.js      landing animations + idea board
 public/js/api.js       fetch helper + token storage
 public/js/auth.js      login and signup form logic
 public/js/dashboard.js dashboard logic (token check, user info)
-
-Read EXPLAIN.md for a full walkthrough and interview Q&A.
