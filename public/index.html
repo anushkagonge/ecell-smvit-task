@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Cell SMVIT: start the thing you keep talking about</title>
+  <meta name="description" content="E-Cell SMVIT is the entrepreneurship cell of SMVIT. Pitch an idea, find your team, and build it.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%232340E8%27/%3E%3Crect x=%278%27 y=%278%27 width=%2716%27 height=%2716%27 rx=%272%27 fill=%27%23FFE14D%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hero">
+    <nav class="nav" aria-label="Main">
+      <a class="logo" href="/" aria-label="E-Cell SMVIT home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span>E-Cell <small>SMVIT</small></span>
+      </a>
+      <div class="nav-actions">
+        <a class="btn btn-ghost btn-small" href="/login">Log in</a>
+        <a class="btn btn-primary btn-small" href="/signup">Join E-Cell</a>
+      </div>
+    </nav>
+
+    <div class="hero-grid" id="main">
+      <div class="hero-copy">
+        <h1 class="headline" aria-label="Start the thing you keep talking about.">
+          <span class="line" aria-hidden="true"><span class="line-inner">Start the thing</span></span>
+          <span class="line" aria-hidden="true"><span class="line-inner">you keep talking</span></span>
+          <span class="line" aria-hidden="true"><span class="line-inner">about.</span></span>
+        </h1>
+        <p class="lede">
+          E-Cell is the entrepreneurship cell at SMVIT. Bring a half-formed idea,
+          find people who will argue with it, and turn it into something real.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/signup">Join E-Cell</a>
+          <a class="btn btn-ghost" href="/login">I already have an account</a>
+        </div>
+      </div>
+
+      <section class="board-wrap" aria-labelledby="board-title">
+        <h2 class="board-title" id="board-title">Try an idea on the board</h2>
+        <div class="board" id="board" aria-live="polite">
+          <p class="board-empty" id="board-empty">Type an idea below. It lands here.</p>
+        </div>
+        <form class="idea-form" id="idea-form" autocomplete="off">
+          <label class="sr-only" for="idea">Your startup idea</label>
+          <input id="idea" name="idea" type="text" maxlength="60" required
+                 placeholder="e.g. cycle rental for campus">
+          <button class="btn btn-primary" type="submit">Stamp it</button>
+        </form>
+        <p class="board-hint">Stamps are random. Real feedback comes from talking to real users.</p>
+      </section>
+    </div>
+  </header>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <a class="logo" href="/">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span>E-Cell <small>SMVIT</small></span>
+        </a>
+        <p class="footer-blurb">
+          The entrepreneurship cell of Sir M. Visvesvaraya Institute of Technology
+          Built by students, for anyone who wants to build.
+        </p>
+      </div>
+      <nav aria-label="Footer">
+        <h2>Get started</h2>
+        <ul>
+          <li><a href="/signup">Join E-Cell</a></li>
+          <li><a href="/login">Log in</a></li>
+          <li><a href="/dashboard">Dashboard</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Follow us</h2>
+        <ul>
+          <li><a href="#" rel="noopener">Instagram</a></li>
+          <li><a href="#" rel="noopener">LinkedIn</a></li>
+          <li><a href="#" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Find us</h2>
+        <address>
+          SMVIT<br>
+          Karnataka, India<br>
+          <a href="mailto:ecell@example.com">ecell@example.com</a>
+        </address>
+      </div>
+    </div>
+    <p class="footer-word" aria-hidden="true">E-Cell SMVIT</p>
+    <div class="footer-bar">&copy; 2026 E-Cell SMVIT. Made for the executive selection task.</div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

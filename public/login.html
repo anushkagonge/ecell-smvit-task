@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in | E-Cell SMVIT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%232340E8%27/%3E%3Crect x=%278%27 y=%278%27 width=%2716%27 height=%2716%27 rx=%272%27 fill=%27%23FFE14D%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="auth on-light">
+  <main class="auth-form-side">
+    <a class="logo" href="/" aria-label="E-Cell SMVIT home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>E-Cell <small>SMVIT</small></span>
+    </a>
+
+    <div class="auth-form-wrap">
+      <h1>Welcome back.</h1>
+      <p class="auth-sub">Log in to see your dashboard.</p>
+
+      <form class="form" id="auth-form" data-mode="login" novalidate>
+        
+        <div class="field">
+          <label for="email">Email</label>
+          <div class="field-control">
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+          </div>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="field-control">
+            <input id="password" name="password" type="password" class="has-toggle" autocomplete="current-password" required minlength="8" placeholder="At least 8 characters">
+            <button class="toggle-pass" type="button" data-target="password" aria-label="Show password">Show</button>
+          </div>
+        </div>
+        
+        <div class="form-msg" id="form-msg" role="alert"></div>
+        <button class="btn btn-ink" type="submit" id="submit-btn">Log in</button>
+      </form>
+
+      <p class="auth-switch">New to E-Cell? <a href="/signup">Create an account</a></p>
+    </div>
+  </main>
+
+  <aside class="auth-art" aria-hidden="true">
+    <h2>Your ideas kept the seat warm.</h2>
+    <div class="auth-note">Next up: finish that thing you started.</div>
+  </aside>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

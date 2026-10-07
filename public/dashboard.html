@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | E-Cell SMVIT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%232340E8%27/%3E%3Crect x=%278%27 y=%278%27 width=%2716%27 height=%2716%27 rx=%272%27 fill=%27%23FFE14D%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="on-light">
+  <header class="dash-top">
+    <a class="logo" href="/" aria-label="E-Cell SMVIT home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>E-Cell <small>SMVIT</small></span>
+    </a>
+    <button class="btn btn-ink btn-small" id="logout-btn" type="button">Log out</button>
+  </header>
+
+  <main class="dash">
+    <p class="welcome" id="welcome" role="status" hidden></p>
+
+    <h1 id="greeting">Checking your session...</h1>
+    <p class="dash-lede">
+      You are logged in. This page only opens with a valid token,
+      so seeing it proves the whole flow works.
+    </p>
+
+    <div class="dash-grid">
+      <section class="panel" aria-labelledby="flow-title">
+        <h2 id="flow-title">Your journey so far</h2>
+        <ol class="flow" id="flow">
+          <li data-step="landing"><span class="tick" aria-hidden="true"></span><div><strong>Landing page</strong><span class="sub">You started on the home page.</span></div></li>
+          <li data-step="account"><span class="tick" aria-hidden="true"></span><div><strong>Signed up or logged in</strong><span class="sub">The server checked your details.</span></div></li>
+          <li data-step="token"><span class="tick" aria-hidden="true"></span><div><strong>Token verified</strong><span class="sub">The server accepted your login token.</span></div></li>
+          <li data-step="dash"><span class="tick" aria-hidden="true"></span><div><strong>Dashboard</strong><span class="sub">You are here.</span></div></li>
+        </ol>
+      </section>
+
+      <div class="side">
+        <section class="panel" aria-labelledby="acct-title">
+          <h2 id="acct-title">Your account</h2>
+          <dl class="facts">
+            <div><dt>Name</dt><dd id="f-name">...</dd></div>
+            <div><dt>Email</dt><dd id="f-email">...</dd></div>
+            <div><dt>Member since</dt><dd id="f-since">...</dd></div>
+          </dl>
+        </section>
+
+        <section class="idea-card" aria-labelledby="idea-title">
+          <h2 id="idea-title">Your first idea</h2>
+          <div id="idea-slot"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
