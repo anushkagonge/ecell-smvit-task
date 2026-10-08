@@ -6,10 +6,10 @@
 
 /* ---------- 1. Design tokens (change colours here, everywhere updates) ---------- */
 :root {
-  --cobalt:black;
+  --cobalt: black;
   --cobalt-deep: #162ab0;
   --ink: #0e1330;
-  --chalk: white;
+  --chalk: #f6f7ff;
   --marker: #ffe14d; /* highlighter yellow */
   --coral: #ff5a4e;
   --coral-soft: #ffb3ad;
@@ -522,7 +522,7 @@ svg {
 
 .auth-art {
   position: relative;
-  background-color: #3a3d45;
+  background-color: var(--cobalt);
   background-image: linear-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.09) 1px, transparent 1px);
   background-size: 44px 44px;
